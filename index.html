@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capybara Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Capybara Clicker</h1>
+        <div id="game-area">
+            <img id="capybara" src="Graphics/capy.png" alt="Capybara">
+        </div>
+        <div id="score">Score: 0</div>
+        <div id="cpc">Capys Per Click (CPC): 1</div>
+        <div id="cps">Capys Per Second (CPS): 0</div>
+        <button id="shopButton">Shop</button>
+        <button id="resetButton">Reset</button>
+        <button id="settingsButton">Settings</button>
+        <div class="side-shop" style="display: none;">
+            <!-- Shop content will be populated here -->
+        </div>
+        <div id="settings" style="display: none;">
+            <button id="toggleSoundButton">Sound: ON</button>
+            <button id="closeSettingsButton">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

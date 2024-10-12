@@ -1,0 +1,139 @@
+/* Background animation */
+@keyframes diagonal-scroll {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* General body styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e1f5fe, #0d47a1); /* Diagonal gradient from light blue to dark blue */
+    background-size: 200% 200%; /* Size for smooth scrolling */
+    animation: diagonal-scroll 10s linear infinite; /* Animation for scrolling effect */
+}
+
+/* The rest of your styles remain the same... */
+
+/* Game container styles */
+#game {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the game container */
+    padding: 30px; /* Padding for better spacing */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Max width for larger screens */
+}
+
+/* Game area to center capybara */
+#game-area {
+    display: flex;
+    justify-content: center; /* Center the capybara */
+    align-items: center;
+    height: 200px; /* Fixed height for the game area */
+}
+
+/* Capybara image styles */
+#capybara {
+    width: 150px; /* Fixed width for the capybara image */
+    cursor: pointer;
+}
+
+/* Title styles */
+h1 {
+    color: #00796b; /* Dark teal color for the title */
+    font-size: 2.5em; /* Larger font size */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Score and CPC display styles */
+#score, #cpc, #cps {
+    cursor: crosshair;
+    margin: 10px 0;
+    font-size: 1.5em; /* Increased font size */
+    color: #004d40; /* Darker color for text */
+    background-color: #e0f2f1; /* Light teal background for scores */
+    padding: 12px;
+    border-radius: 10px; /* Rounded corners for score display */
+    border: 2px solid #00796b; /* Border for score display */
+}
+
+/* Button styles */
+button {
+    margin: 10px; /* Margin for spacing */
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px; /* More rounded button */
+    background-color: #00796b; /* Teal button color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s; /* Smooth transition */
+    font-size: 16px; /* Increased font size */
+    width: 160px; /* Fixed width for buttons */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Shop styles */
+#shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Upgrade button styles */
+#shop button {
+    background-color: #4caf50; /* Green color for upgrade buttons */
+}
+
+#shop button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Settings styles */
+#settings {
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #capybara {
+        width: 100px; /* Reduce size for smaller screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller title for mobile */
+    }
+
+    button {
+        padding: 10px 14px; /* Smaller button padding */
+        font-size: 14px; /* Smaller font size for buttons */
+    }
+
+    #score, #cpc, #pps {
+        font-size: 1.2em; /* Smaller font size for score display */
+    }
+}
