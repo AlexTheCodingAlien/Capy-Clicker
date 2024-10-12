@@ -24,9 +24,12 @@ Files:
 3. **script.js** - Handles game logic including clicks, upgrades, local storage, and settings.
 
 Installation:  
-1. Download the `index.html`, `styles.css`, `script.js`, and asset folders (Graphics, Sounds).
-2. Place them all in the same directory.
-3. Open the `index.html` file in any modern web browser to start playing.
+1. Download the `index.html`, `styles.css`, `script.js`.
+2. Create Folders Named 'Graphics' & 'Sounds'
+3. Place Capy.png into 'Graphics' folder.
+4. Place All Sound Files Into 'Sounds' folder.
+5. Place them all in the same directory.
+6. Open the `index.html` file in any modern web browser to start playing.
 
 Requirements:  
 - A modern web browser (Chrome, Firefox, Edge, etc.).
